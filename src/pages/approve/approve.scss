@@ -1,0 +1,85 @@
+
+.center{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.no-tip-data{
+  width: 70%;
+  height: 20%;
+  @extend .center;
+  >p{
+    @extend .center;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+}
+
+
+/*
+  证明页公共样式
+ */
+
+.common-content{
+  .common-title{
+  font-size: 1.6rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #ccc;
+ }
+   @at-root {
+    .date-label{
+      margin-left:8px !important;
+    }
+  }
+  .select-date{
+     padding-left:0 !important;
+   }
+
+  .user-info>h4,.other-info>h4{
+     font-size:1.4rem;
+     margin-top: 1.2rem;
+  }
+  .user-info{
+     padding:0 .8rem;
+   .user-info-title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+     margin-top: 1.2rem;
+     margin-bottom: .8rem;
+  }
+
+    .info-list{
+      padding-left:0;
+      width: 100%;
+      margin: 0 auto;
+      &:after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .list-item{
+        width: 100%;
+        height: 2rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        list-style: none;
+        .item{
+          width: 40%;
+          text-align: left;
+          float: left;
+        }
+        .item-value{
+          width: 60%;
+          text-align: left;
+          float: left;
+        }
+      }
+  }
+  }
+}

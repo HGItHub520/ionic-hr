@@ -1,0 +1,44 @@
+
+
+.salary-content{
+  .salary-title{
+  font-size: 1.6rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #ccc;
+ }
+ .select-date{
+     padding-left:0 !important;
+   }
+
+  .date-label{
+     margin-left:8px !important;
+  }
+
+
+  .user-info>h4,.other-info>h4{
+     font-size:1.4rem;
+
+  }
+  .user-info{
+     padding:0 .8rem;
+	.user-info-title{
+	  font-size: 1.4rem;
+      text-align: center;
+      padding-bottom: .6rem;
+
+	}
+
+	.info-list{
+	   padding-left:0;
+	}
+  }
+
+  .other-info{
+    padding:0 .8rem;
+    .des{
+      text-indent:1.6rem;
+    }
+  }
+}

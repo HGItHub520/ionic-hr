@@ -1,0 +1,113 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #3f51b5,
+  secondary:  #ff4081,
+  danger:     #f53d3d,
+  light:      #757de8,
+  dark:       #002984,
+  sdark:      #c60055,
+  slight:     #ff79b0
+
+  // primary:    #90caf9,
+  // secondary:  #f8bbd0,
+  // danger:     #c48b9f,
+  // light:      #e3f2fd,
+  // dark:       #5d99c6
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+$background-md-color: #eee;
+
+$button-md-background-color: color($colors,secondary);
+
+$card-md-header-color: color($colors,dark);
+$card-md-header-background-color: color($colors,sdark);
+$card-md-margin-left: 0px;
+$card-md-margin-right: 0px;
+
+
+//$list-md-background-color: #fff;
+
+$radio-md-color-on: color($colors,secondary);
+
+$segment-button-md-font-weight: bold;
+$segment-button-md-text-color-activated: #fff;
+
+$tabs-md-background: color($colors,dark);
+$tabs-md-tab-color-active: #fff;
+$tabs-md-tab-color-inactive: #fff;
+
+$toggle-md-active-color: color($colors,secondary);
+
+$toolbar-md-background:  color($colors,primary);
+$toolbar-md-active-color: color($colors,secondary);
+$toolbar-md-border-color:  color($colors,slight);
+
+//segment component
+@import "design-segment-component";
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";

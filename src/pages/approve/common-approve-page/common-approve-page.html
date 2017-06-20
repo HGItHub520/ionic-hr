@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span>业务办理</span>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="common-content">
+  <h2 class="common-title">通用证明</h2>
+  <ion-item class="select-date">
+    <ion-label class="date-label">计划领取日期:</ion-label>
+    <ion-datetime doneText="确定" cancelText="取消" max="2022-10-31" displayFormat="YYYY/MM/DD" [(ngModel)]="dateObj.getDate"></ion-datetime>
+  </ion-item>
+  <ion-item class="select-date">
+    <ion-label class="date-label">联系手机:</ion-label>
+    <ion-input type="number" max="11" placeholder="手机"></ion-input>
+  </ion-item>
+  <ion-item class="select-date">
+    <ion-label class="date-label">证明名称:</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <div class="approve-template">
+
+    <div class="user-info">
+      <h3 class="user-info-title">证明正文</h3>
+      <textarea placeholder="证明正文内容说明" id="approve_content" name="" cols="30" rows="10"></textarea>
+    </div>
+
+    <div (click)="showTemplate(icon)" class="common-sub">
+      <ion-label>证明模版预览</ion-label>
+      <ion-icon #icon name="arrow-dropright"></ion-icon>
+    </div>
+
+    <div class="template-content">
+
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <button color="secondary" ion-button full bottom>申请</button>
+</ion-footer>

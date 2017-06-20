@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span>业务办理</span>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="common-content">
+   <h2 class="common-title">选择办理类型</h2>
+ <form id="visa_form" (submit)="doSubmit($event)" [formGroup]="visaForm">
+    <ion-list radio-group formControlName="visaType">
+      <ion-item>
+        <ion-label>员工身份证明</ion-label>
+        <ion-radio value="0"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>南航工作经历证明</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>工资收入证明</ion-label>
+        <ion-radio value="2"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>子女入园入学证明</ion-label>
+        <ion-radio value="3"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>通用证明</ion-label>
+        <ion-radio value="4"></ion-radio>
+      </ion-item>
+
+       <div (click)="showSubType(subBox,icon)" class="visa-sub">
+         <ion-label>签证证明(含签证收入证明)</ion-label>
+         <ion-icon #icon name="arrow-dropright"></ion-icon>
+       </div>
+
+     <div #subBox class="sub-select">
+       <ion-item>
+        <ion-label>签证收入证明</ion-label>
+        <ion-radio value="5-0"></ion-radio>
+       </ion-item>
+       <ion-item>
+        <ion-label>希腊法国签证证明</ion-label>
+        <ion-radio value="5-1"></ion-radio>
+       </ion-item>
+       <ion-item>
+        <ion-label>台湾签证证明</ion-label>
+        <ion-radio value="5-2"></ion-radio>
+       </ion-item>
+       <ion-item>
+        <ion-label>退休员工收入证明</ion-label>
+        <ion-radio value="5-3"></ion-radio>
+       </ion-item>
+        <ion-item>
+          <ion-label>小孩英国留学在职和收入证明</ion-label>
+          <ion-radio value="5-4"></ion-radio>
+        </ion-item>
+     </div>
+    </ion-list>
+
+  </form>
+
+</ion-content>
+
+<ion-footer>
+  <button (click)="selectApprovePage()" form="visa_form" type="submit" color="secondary" ion-button full bottom>确定</button>
+</ion-footer>

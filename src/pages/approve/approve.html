@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span>业务办理</span>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="approves?.length===0" class="no-tip-data">
+    <p>您暂时没有申请办理相关业务!</p>
+  </div>
+  <process-range *ngFor="let item of approves" [processObj]="item"></process-range>
+  <ion-fab bottom right>
+    <button (click)="selectBusiness()" ion-fab color="danger"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
+

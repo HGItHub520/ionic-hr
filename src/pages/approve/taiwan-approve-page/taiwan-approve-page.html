@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span>业务办理</span>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="common-content">
+   <h2 class="common-title">台湾签证证明</h2>
+   <ion-item class="select-date">
+      <ion-label class="date-label">计划领取日期:</ion-label>
+      <ion-datetime doneText="确定" cancelText="取消" max="2022-10-31" displayFormat="YYYY/MM/DD" [(ngModel)]="dateObj.getDate"></ion-datetime>
+   </ion-item>
+   <ion-item class="select-date">
+      <ion-label class="date-label">联系手机:</ion-label>
+      <ion-input type="number" placeholder="手机"></ion-input>
+   </ion-item>
+
+  <div class="approve-template">
+    <div (click)="showTemplate(icon)" class="common-sub">
+      <ion-label>证明模版预览</ion-label>
+      <ion-icon #icon name="arrow-dropright"></ion-icon>
+    </div>
+
+    <div class="template-content">
+
+    </div>
+  </div>
+
+  <div class="user-info">
+    <h3 class="user-info-title">关键信息确认</h3>
+    <ul class="info-list">
+      <li class="list-item">
+        <span class="item user-name">姓名: 张三</span>
+        <span class="item-value">性别:男</span>
+      </li>
+      <li class="list-item">
+        <span class="item user-name">参加工作时长:</span>
+        <span class="item-value">9年</span>
+      </li>
+      <li class="list-item">
+        <span class="item user-name">岗位:</span>
+        <span class="item-value">程序开发工程师</span>
+      </li>
+      <li class="list-item">
+        <span class="item company">进入南航时间:</span>
+        <span class="item-value">2007-07-16</span>
+      </li>
+      <li class="list-item">
+        <span class="item user-id">年收入:</span>
+        <span class="item-value">10000</span>
+      </li>
+    </ul>
+  </div>
+
+  <tip-content></tip-content>
+
+</ion-content>
+<ion-footer>
+  <button color="secondary" ion-button full bottom>申请</button>
+</ion-footer>

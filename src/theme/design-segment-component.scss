@@ -1,0 +1,30 @@
+//$background-md-color: #fff;
+
+//$segment-button-md-background-color:transparent;
+
+$border-bottom-width:4px;
+
+$border-bottom-color:#ff4081;
+
+$segment-button-md-border-bottom-width: $border-bottom-width;
+$segment-button-md-border-bottom-color:#6f74dd;
+$segment-button-md-background-color:#6f74dd !default;
+
+
+
+.segment-md .segment-button{
+  background-color: $segment-button-md-background-color!important;
+  opacity: 1!important;
+}
+
+.segment-md-light .segment-button{
+  color:#fff!important;
+}
+.segment-md-light .segment-button.segment-activated{
+  border-color:$border-bottom-color!important;
+}
+
+
+ion-app.md [padding-top]{
+  background-color:$segment-button-md-background-color;
+}

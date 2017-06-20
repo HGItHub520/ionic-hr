@@ -1,0 +1,391 @@
+{
+  "approve": [
+    {
+      "typeNum": 1,
+      "type": "收入证明办理进度",
+      "applicantNumber":"No987776843",
+      "applicantTime":"2017-03-12",
+      "accomplishedTime":"2017-03-16",
+      "steps": [
+        {
+          "rangeNum": 1,
+          "name": "申请"
+        },
+        {
+          "rangeNum": 2,
+          "name": "审核"
+        },
+        {
+          "rangeNum": 3,
+          "name": "打印"
+        },
+        {
+          "rangeNum": 4,
+          "name": "领取"
+        },
+        {
+          "rangeNum": 5,
+          "name": "完成"
+        }
+      ],
+      "current": 4
+    },
+    {
+      "id": 1,
+      "type": "出国签证办理进度",
+      "applicantNumber":"RS001110896573",
+      "applicantTime":"2017-05-12",
+      "accomplishedTime":"2017-07-12",
+      "steps": [
+        {
+          "rangeNum": 1,
+          "name": "申请"
+        },
+        {
+          "rangeNum": 2,
+          "name": "审核"
+        },
+        {
+          "rangeNum": 3,
+          "name": "完成"
+        }
+      ],
+      "current": 2
+    },
+    {
+      "id": 1,
+      "type": "收入证明办理进度",
+      "applicantNumber":"No987776843",
+      "applicantTime":"2017-03-12",
+      "accomplishedTime":"2017-03-12",
+      "steps": [
+        {
+          "rangeNum": 1,
+          "name": "申请"
+        },
+        {
+          "rangeNum": 2,
+          "name": "审核"
+        },
+        {
+          "rangeNum": 3,
+          "name": "打印"
+        },
+        {
+          "rangeNum": 4,
+          "name": "完全"
+        }
+      ],
+      "current": 1
+    }
+  ],
+  "salarys": [
+    {
+      "month": "2017-01",
+      "recentMonthSalary": [
+        5500,
+        5600,
+        5550,
+        5700,
+        5600
+      ],
+      "details": [
+        {
+          "itemName": "书报费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "岗位工资",
+          "itemValue": 1200
+        },
+        {
+          "itemName": "绩效",
+          "itemValue": 3000
+        },
+        {
+          "itemName": "保留补贴",
+          "itemValue": 500
+        },
+        {
+          "itemName": "过节费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "税",
+          "itemValue": -1200
+        },
+        {
+          "itemName": "企业年金",
+          "itemValue": -300
+        }
+      ]
+    },
+    {
+      "month": "2017-02",
+      "recentMonthSalary": [
+        5600,
+        5550,
+        5700,
+        5600,
+        5680
+      ],
+      "details": [
+        {
+          "itemName": "书报费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "岗位工资",
+          "itemValue": 1200
+        },
+        {
+          "itemName": "绩效",
+          "itemValue": 3000
+        },
+        {
+          "itemName": "保留补贴",
+          "itemValue": 500
+        },
+        {
+          "itemName": "过节费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "税",
+          "itemValue": -1200
+        },
+        {
+          "itemName": "企业年金",
+          "itemValue": -300
+        }
+      ]
+    },
+    {
+      "month": "2017-03",
+      "recentMonthSalary": [
+        5550,
+        5700,
+        5600,
+        5680,
+        5400
+      ],
+      "details": [
+        {
+          "itemName": "书报费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "岗位工资",
+          "itemValue": 1200
+        },
+        {
+          "itemName": "绩效",
+          "itemValue": 3000
+        },
+        {
+          "itemName": "保留补贴",
+          "itemValue": 500
+        },
+        {
+          "itemName": "过节费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "税",
+          "itemValue": -1200
+        },
+        {
+          "itemName": "企业年金",
+          "itemValue": -300
+        }
+      ]
+    },
+    {
+      "month": "2017-04",
+      "recentMonthSalary": [
+        5700,
+        5600,
+        5680,
+        5400,
+        5560
+      ],
+      "details": [
+        {
+          "itemName": "书报费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "岗位工资",
+          "itemValue": 1200
+        },
+        {
+          "itemName": "绩效",
+          "itemValue": 3000
+        },
+        {
+          "itemName": "保留补贴",
+          "itemValue": 500
+        },
+        {
+          "itemName": "过节费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "税",
+          "itemValue": -1200
+        },
+        {
+          "itemName": "企业年金",
+          "itemValue": -300
+        }
+      ]
+    },
+    {
+      "month": "2017-05",
+      "recentMonthSalary": [
+        5600,
+        5680,
+        5400,
+        5560,
+        5710
+      ],
+      "details": [
+        {
+          "itemName": "书报费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "岗位工资",
+          "itemValue": 1200
+        },
+        {
+          "itemName": "绩效",
+          "itemValue": 3000
+        },
+        {
+          "itemName": "保留补贴",
+          "itemValue": 500
+        },
+        {
+          "itemName": "过节费",
+          "itemValue": 1000
+        },
+        {
+          "itemName": "税",
+          "itemValue": -1200
+        },
+        {
+          "itemName": "企业年金",
+          "itemValue": -300
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "wang",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "username": "peng",
+      "password": "5678"
+    }
+  ],
+  "market": [
+    {
+      "id": "fsdfsdefds",
+      "type": "secondHand",
+      "subType": "b",
+      "title": "求健身卡一张",
+      "desc": "发士大夫大师傅十大",
+      "imgs": [],
+      "validTime": "2017-04-11 21:30:00"
+    },
+    {
+      "id": "fsdfsdeerfefds",
+      "type": "secondHand",
+      "subType": "s",
+      "title": "出售面包新语面包卷一张",
+      "desc": "地方士大夫似的",
+      "imgs": [],
+      "validTime": "2017-04-11 21:30:00"
+    },
+    {
+      "type": "secondHand",
+      "subType": "b",
+      "title": "fdsf",
+      "desc": "dsfds",
+      "id": "Hy4d4MY6l"
+    },
+    {
+      "type": "secondHand",
+      "subType": "b",
+      "title": "fdgfd",
+      "desc": "fgdfd",
+      "id": "SkumLGYTe"
+    },
+    {
+      "type": "secondHand",
+      "subType": "b",
+      "title": "fgd",
+      "desc": "fgdfdgfdgfd",
+      "id": "HkXeDftTg"
+    },
+    {
+      "type": "secondHand",
+      "subType": "s",
+      "title": "法国大使馆",
+      "desc": "fgdfd打发打发似的gfdgfd",
+      "id": "B10uNsYTe"
+    },
+    {
+      "type": "secondHand",
+      "subType": "s",
+      "title": "fsdfsd",
+      "desc": "fsdsdfsdfsdfs",
+      "id": "HJY1rotTl"
+    },
+    {
+      "type": "secondHand",
+      "subType": "b",
+      "title": "啦啦啦",
+      "desc": "发射点犯得上",
+      "id": "HJApd6Fpg"
+    },
+    {
+      "id": "dfdsfdsegcg",
+      "type": "house",
+      "subType": "b",
+      "title": "求合租",
+      "desc": "发士大夫大师傅十大",
+      "imgs": [],
+      "validTime": "2017-04-11 21:30:00"
+    },
+    {
+      "id": "jkugchjd",
+      "type": "house",
+      "subType": "s",
+      "title": "出租两房一厅",
+      "desc": "地方士大夫似的",
+      "imgs": [],
+      "validTime": "2017-04-11 21:30:00"
+    },
+    {
+      "type": "secondHand",
+      "subType": "s",
+      "id": "rygkKYKCg"
+    },
+    {
+      "type": "secondHand",
+      "subType": "s",
+      "id": "B1McsKjCl"
+    },
+    {
+      "type": "secondHand",
+      "subType": "s",
+      "id": "BJR1pYi0e"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <span>交易市场</span>
+        </ion-title>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-segment [(ngModel)]="marketType" padding-top color="light">
+        <ion-segment-button value="secondHand">
+            二手市场
+        </ion-segment-button>
+        <ion-segment-button value="house">
+            房屋供求
+        </ion-segment-button>
+        <ion-segment-button value="mine">
+            我的
+        </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="marketType">
+
+        <ion-list *ngSwitchCase="'secondHand'">
+
+            <ion-item>
+                <ion-select cancelText="取消" interface="popover" [(ngModel)]="shPlace">
+                    <ion-option value="a">全部交易地点</ion-option>
+                    <ion-option value="gz">广州</ion-option>
+                    <ion-option value="sh">上海</ion-option>
+                    <ion-option value="bj">北京</ion-option>
+                </ion-select>
+                <ion-select cancelText="取消" interface="popover" [(ngModel)]="shSubType">
+                    <ion-option value="a">全部类型</ion-option>
+                    <ion-option value="s">出售</ion-option>
+                    <ion-option value="b">求购</ion-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item *ngFor="let item of secondHands; let i = index;" (click)="presentViewModal(item)">
+                <ion-thumbnail item-right>
+                    <img src="img/thumbnail-kitten-1.jpg">
+                </ion-thumbnail>
+                <p>{{item.desc}}</p>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'house'">
+            <ion-item>
+                <ion-thumbnail item-right>
+                    <img src="img/thumbnail-puppy-1.jpg">
+                </ion-thumbnail>
+                <p>blablablablablablablablablablablablablablabla</p>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-right>
+                    <img src="img/thumbnail-puppy-1.jpg">
+                </ion-thumbnail>
+                <p>blablablablablabldgfgjgfdhylablablabla</p>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-right>
+                    <img src="img/thumbnail-puppy-1.jpg">
+                </ion-thumbnail>
+                <p>blablablablablablablablablyityfitfidiytityblablabla</p>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'mine'">
+            <ion-item *ngFor="let item of mines; let i = index;" (click)="presentCheckModal(item)">
+                <ion-thumbnail item-right>
+                    <img src="img/thumbnail-kitten-1.jpg">
+                </ion-thumbnail>
+                <p>{{item.desc}}</p>
+            </ion-item>
+        </ion-list>
+
+    </div>
+
+    <ion-fab mini right bottom [style.display]="marketType=='mine'?'none':'inline'">
+        <button ion-fab color="secondary" (click)="presentEditModal()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>

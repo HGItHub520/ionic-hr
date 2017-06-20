@@ -1,0 +1,80 @@
+a,i{
+  text-decoration: none;
+}
+#business_wrap{
+  margin-top: 1rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/*组件顶部*/
+#business_wrap>.business-header{
+  padding: 0 .5rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.business-header>.header-title{
+  float: left;
+  font-weight: bolder;
+}
+.business-header>.applicant-num{
+  float: right;
+}
+
+/*组件中间进度条*/
+#business_wrap>.step-list{
+  width: 96%;
+  padding-left: 0;
+  font-size: 0;
+  margin: 1.5rem auto;
+  text-align: center;
+  >.list-item{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 2rem;
+    line-height: 2rem;
+    position: relative;
+    >.arrow{
+      display: block;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      box-sizing: border-box;
+      border: 2px solid #fff;
+      border-bottom: none;
+      border-left: none;
+      top: .26rem;
+      right: -0.8rem;
+      z-index: 1;
+    }
+  }
+
+}
+.step-list>.list-item.accomplished,.accomplished{
+  background-color: #1FC695;
+  color: #fff;
+  >.arrow{
+    background-color: #1FC695;
+  }
+}
+.step-list>.list-item.wait,.wait{
+  background-color: #c8c7cc;
+  >.arrow{
+    background-color: #c8c7cc;
+  }
+}
+/*底部时间*/
+#business_wrap>.business-bottom{
+  padding: 0 .5rem;
+  >p{
+    margin: 0;
+    font-size: 13px;
+    margin-top: .4rem;
+  }
+}
+

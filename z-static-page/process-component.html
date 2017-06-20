@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="telephone=no" name="format-detection">
+  <title>业务办理进度条</title>
+  <style>
+    html{
+      font-size: 16px;
+    }
+    body{
+      width: 100%;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-family: 微软雅黑;
+    }
+    li,ol{
+      list-style: none;
+    }
+
+    a,i{
+        text-decoration: none;
+      }
+    #business_wrap{
+      margin-top: 5rem;
+      padding-bottom: .2rem;
+      border-bottom: 1px solid #ccc;
+    }
+    #business_wrap>.business-header{
+      padding: 0 .5rem;
+      height: 2.6rem;
+      line-height: 2.6rem;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+    .business-header>.header-title{
+      float: left;
+    }
+    .business-header>.applicant-num{
+      float: right;
+    }
+
+
+    #business_wrap>.step-list{
+      width: 96%;
+      font-size: 0;
+      margin: 1.5rem auto;
+      text-align: center;
+    }
+    .step-list>.list-item{
+      display: inline-block;
+      text-align: left;
+      font-size: 12px;
+      height: 1.6rem;
+      text-indent: .4rem;
+      line-height: 1.6rem;
+      width: 19%;
+      overflow: hidden;
+      position: relative;
+    }
+    .step-list>.list-item>.arrow{
+      display: block;
+      transform: rotate(45deg);
+      position: absolute;
+      width: 1.2rem;
+      height: 1.2rem;
+      box-sizing: border-box;
+      border: 2px solid #fff;
+      border-bottom: none;
+      border-left: none;
+      top: .2rem;
+      right: .2rem;
+    }
+    .step-list>.list-item.accomplished,.accomplished{
+      background-color: #1FC695;
+      color: #fff;
+    }
+    .step-list>.list-item.wait,.wait{
+      background-color: #EEE;
+    }
+
+    #business_wrap>.business-bottom{
+      padding: 0 .5rem;
+    }
+  </style>
+</head>
+<body>
+<div id="business_wrap">
+  <div class="business-header">
+    <h3 class="header-title">收入证明办理进度</h3>
+    <span class="applicant-num">申请号:RS01170412001</span>
+  </div>
+  <ul class="step-list">
+    <li class="list-item accomplished">申请<i class="arrow"></i></li>
+    <li class="list-item accomplished">审核<i class="arrow"></i></li>
+    <li class="list-item accomplished">打印<i class="arrow"></i></li>
+    <li class="list-item wait">领取<i class="arrow"></i></li>
+    <li class="list-item wait">完成</li>
+  </ul>
+  <div class="business-bottom">
+    <p>申请时间 : 2017-03-12</p>
+    <p>预计完成时间 : 2017-03-12</p>
+  </div>
+</div>
+</body>
+</html>

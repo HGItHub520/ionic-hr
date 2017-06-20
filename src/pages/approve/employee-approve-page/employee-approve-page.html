@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span>业务办理</span>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="common-content employee">
+   <h2 class="common-title">南航员工身份证明</h2>
+   <ion-item class="select-date">
+      <ion-label class="date-label">计划领取日期:</ion-label>
+      <ion-datetime doneText="确定" cancelText="取消" max="2022-10-31" displayFormat="YYYY/MM/DD" [(ngModel)]="dateObj.getDate"></ion-datetime>
+   </ion-item>
+
+   <ion-item class="select-date">
+      <ion-label class="date-label">联系手机:</ion-label>
+      <ion-input type="number" max="11" placeholder="手机"></ion-input>
+   </ion-item>
+
+   <div class="approve-template">
+      <div (click)="showTemplate(icon)" class="common-sub">
+         <ion-label>证明模版预览</ion-label>
+         <ion-icon #icon name="arrow-dropright"></ion-icon>
+       </div>
+
+       <div class="template-content">
+
+       </div>
+   </div>
+   <div class="user-info">
+     <h3 class="user-info-title">关键信息确认</h3>
+     <ul class="info-list">
+       <li class="list-item">
+         <span class="item user-name">姓名: 张三</span>
+         <span class="item-value">性别:男</span>
+       </li>
+       <li class="list-item">
+         <span class="item user-name">出生日期:</span>
+         <span class="item-value">1985-01-01</span>
+       </li>
+       <li class="list-item">
+         <span class="item user-name">工作号:</span>
+         <span class="item-value">288888</span>
+       </li>
+       <li class="list-item">
+         <span class="item company">工作单位:</span>
+         <span class="item-value">南航股份公司信息中心</span>
+       </li>
+       <li class="list-item">
+         <span class="item user-id">身份证号码:</span>
+         <span class="item-value">440112344XXXXXXXXXXXXX</span>
+       </li>
+       <li class="list-item">
+         <span class="item professional">政治面貌:</span>
+         <span class="item-value">中共党员</span>
+       </li>
+
+     </ul>
+   </div>
+
+  <tip-content></tip-content>
+
+</ion-content>
+<ion-footer>
+  <button color="secondary" ion-button full bottom>申请</button>
+</ion-footer>

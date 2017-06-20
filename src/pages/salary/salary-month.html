@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>月收入</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-datetime displayFormat="YYYY/MM" min="2009" max="2017" cancelText='取消' doneText='确认' [(ngModel)]="nowDate"></ion-datetime>
+
+  <ion-card>
+    <ion-card-header>
+      3月收入情况
+    </ion-card-header>
+    <ion-card-content>
+      <div id="linePic" style="height:200px; width:400px" no-padding auto-fit-layout></div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      3月收入明细
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row *ngFor="let item of salaryMonth?.details; let i = index;">
+          <ion-col>
+            {{item.itemName}}
+          </ion-col>
+          <ion-col text-right [style.color]="item.itemValue > 0 ? 'brown' : 'green'">
+            {{item.itemValue>0?'+'+item.itemValue:item.itemValue}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

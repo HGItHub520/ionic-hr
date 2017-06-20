@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <span>详情</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            {{market.subType}}
+        </ion-item>
+        <ion-item>
+            {{market.desc}}
+        </ion-item>
+        <ion-item [style.display]="type=='mine'?'none':'inline'">
+            <button ion-button icon-right item-right>
+                联系卖家
+                <ion-icon name="send"></ion-icon>
+            </button>
+        </ion-item>
+
+        <div padding [style.display]="type=='mine'?'inline':'none'">
+            <ion-row>
+                <ion-col col-6>
+                    <button ion-button outline (click)="delete()" block> 删除</button>
+                </ion-col>
+                <ion-col col-6>
+                    <button ion-button (click)="modify()" block>修改</button>
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-list>
+</ion-content>

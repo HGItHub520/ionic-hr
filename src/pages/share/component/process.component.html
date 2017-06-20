@@ -1,0 +1,18 @@
+<div *ngIf="processObj" id="business_wrap">
+  <div class="business-header">
+    <span class="header-title">{{processObj?.type}}</span>
+    <span class="applicant-num">申请号:{{processObj?.applicantNumber}}</span>
+  </div>
+
+  <ul class="step-list">
+    <li [style.width.%]="90/processObj?.steps.length" [class.accomplished]="i<processObj?.current" [class.wait]="i>=processObj?.current"
+        *ngFor="let step of processObj?.steps;let i=index;
+        "class="list-item">{{step.name}}<i *ngIf="processObj?.steps.length!==step.rangeNum" class="arrow"></i>
+    </li>
+  </ul>
+
+  <div class="business-bottom">
+    <p>申请时间 : {{processObj?.applicantTime}}</p>
+    <p>预计完成时间 : {{processObj?.accomplishedTime}}</p>
+  </div>
+</div>
